@@ -1,0 +1,40 @@
+@import '../../assets/scss/variables';
+
+.featureItemWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.iconWrapper {
+    width: 56px;
+    height: 56px;
+    background-color: $white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.contentSection{
+    display: flex;
+    align-items: center;
+}
+.icon {
+    width: 26px;
+    height: 26px;
+    color: $primary;
+}
+
+.title{
+    font-size: 24px;
+    color: $primary;
+}
+
+.description{
+    font-size: 18px;
+    color: $gray;
+}

@@ -1,5 +1,11 @@
 @import '../../assets/Scss/variables';
 
+.mdView{
+    display: none;
+}
+.xlView{
+    display: flex;
+}
 .contentWrapper {
     display: flex;
     flex-direction: column;
@@ -16,26 +22,82 @@
     -webkit-text-fill-color: transparent;
 }
 
-.lightBackground {
-    background-color: $light1;
-}
-
 .descriptionText {
     color: $gray;
     text-align: right;
     max-width: 90%;
 }
 
-.buttonContainer{
+.buttonContainer {
     margin: 50px 0;
 }
 
-.gradientButton{
+.gradientButton {
     background: linear-gradient(90deg, $primary 24.2%, $secondary 120.46%);
 }
 
-.buttonWidth{
+.buttonWidth {
     height: 55px;
     width: 320px;
     max-width: 320px;
+}
+
+.landingImage {
+    width: 50%;
+    height: 50%;
+}
+
+.landingPageContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+@media  (max-width:940px) {
+    .landingPageContent {
+        flex-direction: column-reverse;
+        row-gap: 55px;
+    }
+
+    .descriptionText {
+        text-align: center;
+    }
+
+    .contentWrapper {
+        align-items: center;
+    }
+
+    .mdView{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .xlView{
+        display: none;
+
+    }
+    .landingImage {
+        width: 80%;
+        height: 80%;
+    }
+
+}
+
+@media  (max-width:540px) {
+
+    .landingPageContent {
+        row-gap: 35px;
+    }
+
+    .buttonWidth {
+        width: 187px;
+        max-width: 187px;
+    }
+
+    .descriptionText {
+        max-width: 100%;
+    }
 }

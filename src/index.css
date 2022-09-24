@@ -1,14 +1,21 @@
-* { 
+@import './assets/scss/_common.scss';
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   height: 100%;
 }
-body { position:absolute; top:0; bottom:0; right:0; left:0; }
-body { min-height: 100vh; }
+
 body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  min-height: 100vh;
   margin: 0;
   font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
@@ -18,12 +25,14 @@ body {
   box-sizing: border-box;
 }
 
-.App{
+.App {
   height: 100%;
 }
-#root{
+
+root {
   height: 100%;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -35,6 +44,14 @@ h1 {
   font-size: 64px;
   line-height: 64px;
   margin: 0;
+}
+
+h3 {
+  font-family: 'Helvetica';
+  font-size: 48px;
+  line-height: 48px;
+  margin: 0;
+
 }
 
 p {
@@ -62,4 +79,15 @@ p {
 
 .wight-300 {
   font-weight: 700;
+}
+
+@media (max-width:540px) {
+  h1 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

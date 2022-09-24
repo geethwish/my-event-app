@@ -1,0 +1,30 @@
+@import '../../assets/scss/variables';
+.lightBackground {
+    background-color: $white;
+}
+
+.contentWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageWrapper{
+    width: 500px;
+    height: 500px;
+}
+
+.hostedText{
+    font-size: 18px;
+    color: $gray;
+}
+
+.title{
+    color: $dark;
+}
+
+.featureWrapper{
+    margin-top: 50px;
+}
+.textContent{
+    width: 40%;
+}
