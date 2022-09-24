@@ -1,10 +1,16 @@
 import React from 'react'
+
+// components
 import Image from '../../components/Image/Image'
 import PageContainer from '../../components/PageContainer/PageContainer'
-
-import BirthdayImage from '../../assets/images/png/BirthdayCake.png'
-import styles from './createEvent.module.scss'
 import FeatureItem from '../../components/FeatureItem/FeatureItem'
+
+// images
+import BirthdayImage from '../../assets/images/png/BirthdayCake.png'
+
+// styles
+import styles from './createEvent.module.scss'
+
 const CreateEvent = () => {
 
     const featureList = [
@@ -38,10 +44,14 @@ const CreateEvent = () => {
 
                         <div className={styles.featureWrapper}>
                             {
+                                // set data to FeatureItem component using features list 
+                            }
+                            {
                                 featureList.map((feature, index) => (
                                     <FeatureItem key={index} {...feature} />
                                 ))
                             }
+
                         </div>
 
                     </div>
@@ -49,6 +59,7 @@ const CreateEvent = () => {
                     <div className={styles.imageWrapper}>
 
                         <Image src={BirthdayImage} />
+
                     </div>
 
                 </div>

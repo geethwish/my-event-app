@@ -1,14 +1,17 @@
-import { Container, Grid } from '@mui/material'
 import React from 'react'
+import classNames from 'classnames';
+import { useNavigate } from 'react-router-dom'
+
+// components
 import Button from '../../components/Form/Button/Button'
 import PageContainer from '../../components/PageContainer/PageContainer'
-
-import styles from './Home.module.scss'
-
-import classNames from 'classnames';
 import Image from '../../components/Image/Image'
+
+// images
 import LandingPageImage from '../../assets/images/svg/LandingPageImage.svg'
-import { useNavigate } from 'react-router-dom'
+
+// styles
+import styles from './Home.module.scss'
 
 const Home = (props) => {
 
@@ -16,8 +19,10 @@ const Home = (props) => {
 
     const handleNavigation = () => {
 
+        // navigate to create page
         navigate("/create")
     }
+
     return (
         <>
             <PageContainer className={styles.lightBackground}>
@@ -57,6 +62,7 @@ const Home = (props) => {
                 <div className={classNames(styles.buttonContainer, styles.mdView)}>
                     <Button label={"Create my event"} className={classNames(styles.gradientButton, styles.buttonWidth)} onClick={handleNavigation} />
                 </div>
+                
             </PageContainer>
         </>
     )
